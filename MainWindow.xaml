@@ -1,0 +1,9 @@
+<Window x:Class="CatClickerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ultimate Cat Clicker" WindowState="Maximized"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <WebView2 x:Name="webView" Source="https://catsdevs.online"/>
+    </Grid>
+</Window>
