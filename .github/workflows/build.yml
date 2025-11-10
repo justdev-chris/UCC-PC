@@ -11,12 +11,10 @@ jobs:
       with:
         dotnet-version: '6.0.x'
         
-    - name: Build
-      run: dotnet build --configuration Release
-      
-    - name: Publish
-      run: dotnet publish --configuration Release --self-contained true --runtime win-x64 -p:PublishSingleFile=true
-      
+    - name: Build Standalone EXE
+      run: |
+        dotnet publish --configuration Release --runtime win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+        
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
