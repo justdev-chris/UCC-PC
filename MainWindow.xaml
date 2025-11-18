@@ -5,6 +5,6 @@
         Title="Ultimate Cat Clicker" WindowState="Maximized"
         KeyDown="Window_KeyDown">
     <Grid>
-        <webview2:WebView2 x:Name="webView" Source="https://open.spotify.com/"/>
+        <webview2:WebView2 x:Name="webView" Source="https://catsdevs.online/"/>
     </Grid>
 </Window>
